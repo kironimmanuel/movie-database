@@ -1,11 +1,10 @@
 import React, { useState, useContext } from 'react'
 import useFetch from '../hooks/useFetch'
-export const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`
 
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
-  const [query, setQuery] = useState('Avengers')
+  const [query, setQuery] = useState('Star Wars')
   const { isLoading, error, data: movies } = useFetch(`&s=${query}`)
 
   return (
