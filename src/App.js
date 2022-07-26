@@ -1,8 +1,8 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Home from './components/ui/Home'
 import Movie from './components/ui/SingleMovie'
 import Error from './components/ui/Error'
+import Home from './components/ui/Home'
+import React from 'react'
 
 function App() {
   return (
